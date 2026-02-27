@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.send(`
-    <h1>CloudNest Platform</h1>
+    <h1>CloudNest v2 - CI Working</h1>
     <p>Server Hostname: ${os.hostname()}</p>
     <p>Environment: Production</p>
   `);
