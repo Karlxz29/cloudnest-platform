@@ -1,11 +1,12 @@
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /app
 
-COPY backend/package*.json ./
-RUN npm install --production
+COPY package*.json ./
 
-COPY backend/ .
+RUN npm install
+
+COPY . .
 
 EXPOSE 4000
 
